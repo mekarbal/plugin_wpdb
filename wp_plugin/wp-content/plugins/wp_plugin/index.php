@@ -1,7 +1,7 @@
 <?php
 /*
 
-Plugin Name: Our First Plugin
+Plugin Name: MonPlugin
 Plugin URI: 
 Description: First step to create a wordpress plugin
 Version: 0.0.1
