@@ -37,24 +37,39 @@ $wpdb->insert( $table_name, array(
                         'inputarea' => $email,
                         'option'=>$option
                         )); 
-    echo '<h1 style="color:blue; text-align:center">data registred check your info page</h1> ';
+    echo '
+      <div id="message" class="updated below-h2">
+        <p>data registred check your info page</p>
+      </div>
+    ';
     }
   ?>     
   <center>  
   <h1 style="color:green; text-align:center">register some infos</h1> 
    <form action="" method="post">
-    <label for="inputtxt">Firstname:</label>
-     <input type="text" name="inputtxt" id="inputtxt"  required/><br><br>
-    
-    <label for="inputarea">Texte Area:</label> 
-    <textarea type="text" name="inputarea" id="inputarea"  required></textarea><br><br> 
-   <label for="option"> options :</label>
-    <select name="option" id="option" required>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-    </select><br><br>
-    <input type="submit" name="submit"/>
+    <table>
+        <tr>
+          <td><label for="inputtxt">Firstname:</label></td>
+          <td><input type="text" name="inputtxt" id="inputtxt"  required/><br></td>
+        </tr>
+        <tr>
+          <td><label for="inputarea">Texte Area:</label></td>
+          <td><textarea type="text" name="inputarea" id="inputarea"  required></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="option"> options :</label></td>
+          <td>
+            <select name="option" id="option" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" ><center><hr><input type="submit" name="submit"/></center></td>
+        </tr>
+      </table>
   </form>
 </center>
   <?php
@@ -85,7 +100,7 @@ if(!empty($results))
                 <th>Input option</th>
             </tr>
         </thead>
-        <tbody s">
+        <tbody>
     <?php
           
     foreach($results as $row){   
