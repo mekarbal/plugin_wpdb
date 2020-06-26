@@ -18,7 +18,9 @@ To run this project you must follow these steps :
   
   <h4>4rd Step: copy all this fils and Paste in wp-content\plugins\wp_plugin in your wordpress instalation.</h4> 
   
-  <h4>5td step: Activite the plugin from the dashboard of wordpress</h4> 
+  <h4>5td step - Paste wordpress folder in "xampp / htdocs" - ("wamp / WWW")
+  
+  <h4>6td step: Activite the plugin from the dashboard of wordpress</h4> 
   
   for the admin config you can use as username : "admin" and password "123456"
   
